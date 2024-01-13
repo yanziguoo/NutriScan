@@ -11,13 +11,12 @@
 		59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D2B2B533A3F00C3E69E /* ContentView.swift */; };
 		59348D2E2B533A4200C3E69E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D2D2B533A4200C3E69E /* Assets.xcassets */; };
 		59348D312B533A4200C3E69E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D302B533A4200C3E69E /* Preview Assets.xcassets */; };
-		59348D3B2B533A4200C3E69E /* nutriscanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D3A2B533A4200C3E69E /* nutriscanTests.swift */; };
-		59348D452B533A4200C3E69E /* nutriscanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D442B533A4200C3E69E /* nutriscanUITests.swift */; };
-		59348D472B533A4200C3E69E /* nutriscanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D462B533A4200C3E69E /* nutriscanUITestsLaunchTests.swift */; };
 		59348D542B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
 		59348D552B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
 		59348D562B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
 		59348D592B533CFE00C3E69E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59348D582B533CFE00C3E69E /* FirebaseAnalytics */; };
+		59348D662B534ABB00C3E69E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D652B534ABB00C3E69E /* LoginView.swift */; };
+		59348D682B534C8B00C3E69E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D672B534C8B00C3E69E /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +43,10 @@
 		59348D2D2B533A4200C3E69E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59348D302B533A4200C3E69E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59348D362B533A4200C3E69E /* nutriscanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriscanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		59348D3A2B533A4200C3E69E /* nutriscanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriscanTests.swift; sourceTree = "<group>"; };
 		59348D402B533A4200C3E69E /* nutriscanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriscanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		59348D442B533A4200C3E69E /* nutriscanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriscanUITests.swift; sourceTree = "<group>"; };
-		59348D462B533A4200C3E69E /* nutriscanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriscanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		59348D532B533BCE00C3E69E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		59348D652B534ABB00C3E69E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		59348D672B534C8B00C3E69E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				59348D282B533A3E00C3E69E /* nutriscan */,
-				59348D392B533A4200C3E69E /* nutriscanTests */,
-				59348D432B533A4200C3E69E /* nutriscanUITests */,
 				59348D272B533A3E00C3E69E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,9 +96,11 @@
 		59348D282B533A3E00C3E69E /* nutriscan */ = {
 			isa = PBXGroup;
 			children = (
+				59348D5E2B53485800C3E69E /* App */,
+				59348D5D2B53485600C3E69E /* Components */,
+				59348D5C2B53485500C3E69E /* Core */,
+				59348D5F2B5348C200C3E69E /* Model */,
 				59348D532B533BCE00C3E69E /* GoogleService-Info.plist */,
-				59348D292B533A3E00C3E69E /* nutriscanApp.swift */,
-				59348D2B2B533A3F00C3E69E /* ContentView.swift */,
 				59348D2D2B533A4200C3E69E /* Assets.xcassets */,
 				59348D2F2B533A4200C3E69E /* Preview Content */,
 			);
@@ -117,21 +115,68 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		59348D392B533A4200C3E69E /* nutriscanTests */ = {
+		59348D5C2B53485500C3E69E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				59348D3A2B533A4200C3E69E /* nutriscanTests.swift */,
+				59348D642B5349AC00C3E69E /* Welcome */,
+				59348D622B53491E00C3E69E /* Authentication */,
+				59348D632B53493100C3E69E /* Profile */,
+				59348D612B5348FA00C3E69E /* Root */,
 			);
-			path = nutriscanTests;
+			path = Core;
 			sourceTree = "<group>";
 		};
-		59348D432B533A4200C3E69E /* nutriscanUITests */ = {
+		59348D5D2B53485600C3E69E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				59348D442B533A4200C3E69E /* nutriscanUITests.swift */,
-				59348D462B533A4200C3E69E /* nutriscanUITestsLaunchTests.swift */,
+				59348D672B534C8B00C3E69E /* InputView.swift */,
 			);
-			path = nutriscanUITests;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		59348D5E2B53485800C3E69E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				59348D292B533A3E00C3E69E /* nutriscanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		59348D5F2B5348C200C3E69E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59348D612B5348FA00C3E69E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				59348D2B2B533A3F00C3E69E /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		59348D622B53491E00C3E69E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				59348D652B534ABB00C3E69E /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		59348D632B53493100C3E69E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		59348D642B5349AC00C3E69E /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59348D662B534ABB00C3E69E /* LoginView.swift in Sources */,
+				59348D682B534C8B00C3E69E /* InputView.swift in Sources */,
 				59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */,
 				59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */,
 			);
@@ -282,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59348D3B2B533A4200C3E69E /* nutriscanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59348D472B533A4200C3E69E /* nutriscanUITestsLaunchTests.swift in Sources */,
-				59348D452B533A4200C3E69E /* nutriscanUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
