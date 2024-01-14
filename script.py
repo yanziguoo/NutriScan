@@ -68,9 +68,11 @@ def prepare_image_local(image_path):
 def writeFoodtoDB(db, data):
     collection_ref = db.collection("nutrition_facts")
     docs = collection_ref.stream()
+    length = list(collection_ref.stream())
 
-    for doc in docs:
-        doc.reference.delete()
+    if len(length) > 0:
+        for doc in docs:
+            doc.reference.delete()
 
     for li in data:
         data_list = json.loads(li)
@@ -90,16 +92,10 @@ def writeTotaltoDB(db):
         data_dict = doc.to_dict()
         del data_dict["name"]
 
-        # print("food", data_dict)
-
         users_docs = users_ref.stream()
         for user in users_docs:
             doc_dict = user.to_dict()
-            # print("user", doc_dict)
-
             summed_dict = {key: doc_dict[key] + data_dict[key] for key in doc_dict.keys()}
-            # print("sum", summed_dict)
-
             db.collection("users").document("ApQhowngBK0mGVw5Ld3h").set(summed_dict)
 
 
@@ -132,7 +128,7 @@ def initiateDB():
 db = initiateDB()
 
 # read image from database
-readfromDB("banapple.jpg")
+readfromDB("pizza.jpg")
 
 # write food from image's nutrients to "nutrient_facts" database
 writeFoodtoDB(db, get_nutrition_facts())
