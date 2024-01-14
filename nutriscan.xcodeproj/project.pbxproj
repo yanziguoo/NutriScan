@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D292B533A3E00C3E69E /* nutriscanApp.swift */; };
-		59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D2B2B533A3F00C3E69E /* ContentView.swift */; };
 		59348D2E2B533A4200C3E69E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D2D2B533A4200C3E69E /* Assets.xcassets */; };
 		59348D312B533A4200C3E69E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D302B533A4200C3E69E /* Preview Assets.xcassets */; };
 		59348D592B533CFE00C3E69E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59348D582B533CFE00C3E69E /* FirebaseAnalytics */; };
@@ -52,7 +51,6 @@
 /* Begin PBXFileReference section */
 		59348D262B533A3E00C3E69E /* nutriscan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nutriscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59348D292B533A3E00C3E69E /* nutriscanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriscanApp.swift; sourceTree = "<group>"; };
-		59348D2B2B533A3F00C3E69E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59348D2D2B533A4200C3E69E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59348D302B533A4200C3E69E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59348D362B533A4200C3E69E /* nutriscanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriscanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,7 +151,6 @@
 				59348D712B5383C000C3E69E /* Home */,
 				59348D622B53491E00C3E69E /* Authentication */,
 				59348D632B53493100C3E69E /* Profile */,
-				59348D612B5348FA00C3E69E /* Root */,
 				59348D642B5349AC00C3E69E /* Welcome */,
 			);
 			path = Core;
@@ -183,14 +180,6 @@
 				59348D7F2B538BFC00C3E69E /* User.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		59348D612B5348FA00C3E69E /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				59348D2B2B533A3F00C3E69E /* ContentView.swift */,
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		59348D622B53491E00C3E69E /* Authentication */ = {
@@ -408,7 +397,6 @@
 				59348D7A2B5387E200C3E69E /* MonthStatsView.swift in Sources */,
 				59348D682B534C8B00C3E69E /* InputView.swift in Sources */,
 				59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */,
-				59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */,
 				59348D802B538BFC00C3E69E /* User.swift in Sources */,
 				AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */,
 				59348D752B53856E00C3E69E /* MenuView.swift in Sources */,

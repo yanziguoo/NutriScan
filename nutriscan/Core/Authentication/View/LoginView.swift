@@ -40,22 +40,15 @@ struct LoginView: View {
                 
                 // sign in
                 
-                Button {
-//                    Task {
-//                        try await viewModel.signIn(withEmail: email, password: pwd)
-//                    }
-
-                } label: {
-                    HStack {
-                        Text("SIGN IN")
-                            .fontWeight(.semibold)
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                NavigationLink (destination: HomeView()) {
+                    Text("SIGN IN")
+                        .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                        .background(Color("navy"))
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color(.white))
+                        .cornerRadius(10)
+                        .padding(.top, 24)
                 }
-                .background(Color(.systemBlue))
-                .cornerRadius(10)
-                .padding(.top, 24)
                 
                 Spacer()
                 
