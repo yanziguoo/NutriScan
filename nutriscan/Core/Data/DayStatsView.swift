@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  DayStatsView.swift
 //  nutriscan
 //
 //  Created by Yanzi Guo on 2024-01-13.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct DayStatsView: View {
     var body: some View {
         NavigationStack{
             VStack {
@@ -32,9 +32,10 @@ struct HomeView: View {
                         MenuView(text: "Boba")
                         MenuView(text: "Curry")
                         MenuView(text: "Pizza")
+                        MenuView(text: "Croissant")
                     }
                     
-                    NutrientsData(a: "2207.5", b: " 88.9 g", c: "31.8 g", d: "150.5 g", e: "2721.4 mg", f: "3305.2 mg", g: "299.7 mg", h: "295.2 g", i: "31.5 g", j: "39.9 g")
+                    NutrientsData(a: "2602.5", b: "110 g", c: "43.5 g", d: "158.7 g", e: "3157.4 mg", f: "3410.2 mg", g: "365.7 mg", h: "340.2 g", i: "34.1 g", j: "51.1 g")
                 }
             }
             Spacer()
@@ -54,5 +55,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    DayStatsView()
 }

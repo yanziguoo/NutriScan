@@ -19,7 +19,7 @@ struct PictureView: View {
         NavigationView {
             VStack {
                 NavigationLink(
-                    destination: EditView(image: selectedImage),
+                    destination: EditView(),
                     isActive: $navigateToEditView
                 ) {
                     EmptyView()

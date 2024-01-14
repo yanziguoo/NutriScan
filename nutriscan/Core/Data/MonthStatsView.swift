@@ -32,12 +32,12 @@ struct MonthStatsView: View {
                             .foregroundStyle(Color(.black))
                     }
                 }
-                Text("50%")
+                Text("23%")
                     .font(.title)
                     .fontWeight(.semibold)
                     .foregroundStyle(Color(.white))
                     .frame(width: 200, height: 200)
-                    .background(Color(.systemBlue))
+                    .background(Color(.systemRed))
                     .clipShape(Circle())
                     .padding(.bottom, 150)
             }

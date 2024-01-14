@@ -24,7 +24,7 @@ struct WelcomeView: View {
                     .font(.system(size: 24))
                     .padding(.bottom, 4)
                 
-                Text("NutriSens")
+                Text("NutriScan")
                     .fontWeight(.bold)
                     .font(.system(size: 40))
                     .foregroundColor(Color("baby-pink"))
