@@ -22,16 +22,13 @@ def analyze_image(image) -> vision.EntityAnnotation:
     return get_nutrition_from_food(label.description)
 
 
-def get_nutrition_from_food(foods):
-    responses = []
-    for food in foods:
-        api_url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(food)
-        response = requests.get(api_url, headers={'X-Api-Key': 'XEA4jWEb1x9HbZ8MEu5jPg==iq353covMT6SZ1gS'})
-        if response.status_code == requests.codes.ok:
-            responses.append(response.text)
-        else:
-            return "Error:", response.status_code, response.text
-    return responses
+def get_nutrition_from_food(food):
+    api_url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(food)
+    response = requests.get(api_url, headers={'X-Api-Key': 'XEA4jWEb1x9HbZ8MEu5jPg==iq353covMT6SZ1gS'})
+    if response.status_code == requests.codes.ok:
+        return response.text
+    else:
+        return "Error:", response.status_code, response.text
 
 def prepare_image_local(image_path):
     with io.open(image_path, 'rb') as image_file:
