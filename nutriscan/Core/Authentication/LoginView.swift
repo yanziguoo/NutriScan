@@ -56,6 +56,18 @@ struct LoginView: View {
                 Spacer()
                 
                 // sign up
+                
+                NavigationLink {
+                    RegistrationView()
+                        .navigationBarBackButtonHidden(true)
+                } label: {
+                    HStack(spacing: 3) {
+                        Text("Don't have an account?")
+                        Text("Sign up!")
+                            .fontWeight(.bold)
+                    }
+                    .font(.system(size: 14))
+                }
             }
         }
     }

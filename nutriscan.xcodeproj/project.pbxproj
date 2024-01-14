@@ -17,6 +17,7 @@
 		59348D592B533CFE00C3E69E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59348D582B533CFE00C3E69E /* FirebaseAnalytics */; };
 		59348D662B534ABB00C3E69E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D652B534ABB00C3E69E /* LoginView.swift */; };
 		59348D682B534C8B00C3E69E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D672B534C8B00C3E69E /* InputView.swift */; };
+		59348D6A2B535D6E00C3E69E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D692B535D6E00C3E69E /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		59348D532B533BCE00C3E69E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59348D652B534ABB00C3E69E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		59348D672B534C8B00C3E69E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		59348D692B535D6E00C3E69E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				59348D652B534ABB00C3E69E /* LoginView.swift */,
+				59348D692B535D6E00C3E69E /* RegistrationView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				59348D682B534C8B00C3E69E /* InputView.swift in Sources */,
 				59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */,
 				59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */,
+				59348D6A2B535D6E00C3E69E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
