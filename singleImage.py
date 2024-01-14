@@ -3,6 +3,7 @@ import requests
 from camera import takePhoto
 import io
 import os
+from dotenv import load_dotenv
 
 
 def analyze_image(image) -> vision.EntityAnnotation:
@@ -23,8 +24,9 @@ def analyze_image(image) -> vision.EntityAnnotation:
 
 
 def get_nutrition_from_food(food):
+    load_dotenv()
     api_url = 'https://api.api-ninjas.com/v1/nutrition?query={}'.format(food)
-    response = requests.get(api_url, headers={'X-Api-Key': 'XEA4jWEb1x9HbZ8MEu5jPg==iq353covMT6SZ1gS'})
+    response = requests.get(api_url, headers={'X-Api-Key': os.environ.get("NINJA_API_KEY")})
     if response.status_code == requests.codes.ok:
         return response.text
     else:
