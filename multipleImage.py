@@ -47,7 +47,7 @@ def draw_boundary(pil_image, vertices, caption):
     draw.text((xys[0][0], xys[0][1]), caption, (0,0,0), font=font)
 
 def get_nutrition_facts_from_multiple_foods():
-    takePhoto()
+    # takePhoto()
     image_path = os.path.join('./deltahacks24/image.png')
     # print(image_path)
     features = [vision.Feature.Type.OBJECT_LOCALIZATION]
