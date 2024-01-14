@@ -34,11 +34,7 @@ struct HomeView: View {
                         MenuView(text: "Pizza")
                     }
                     
-                    Section("Nutrient Intake Overview") {
-                        NutrientView(text: "Banana", num: "1")
-                        NutrientView(text: "Apple", num: "2")
-                        NutrientView(text: "Pizza", num: "3")
-                    }
+                    NutrientsData(a: "324 kcal", b: " 5 g", c: "0.3 g", d: "100 g", e: "5 mg", f: "20 mg", g: "5 mg", h: "15 g", i: "2 g", j: "10 g")
                 }
             }
             Spacer()
