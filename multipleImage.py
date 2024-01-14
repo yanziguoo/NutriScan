@@ -11,7 +11,9 @@ def get_foods(response: vision.AnnotateImageResponse):
     pil_image = Image.open(os.path.join('./deltahacks24/image.png'));
     foods = []
     for obj in response.localized_object_annotations:
-        if len(get_nutrition_from_food(obj.name)) > 2 and "Fruit" not in obj.name and "fruit" not in obj.name:
+        nutrition = get_nutrition_from_food(obj.name);
+        # print(obj.name, nutrition)
+        if len(nutrition) > 2 and "Fruit" not in obj.name and "fruit" not in obj.name:
             nvertices = obj.bounding_poly.normalized_vertices
             # print(
             #     # f"{obj.score:4.0%}",
@@ -20,7 +22,7 @@ def get_foods(response: vision.AnnotateImageResponse):
             #     # ",".join(f"({v.x:.1f},{v.y:.1f})" for v in nvertices),
             #     # sep=" | ",
             # )
-            foods.append(obj.name)
+            foods.append(nutrition)
             draw_boundary(pil_image, nvertices, obj.name)
     pil_image.save("./deltahacks24/processedImage.png")
     return foods
@@ -42,7 +44,7 @@ def draw_boundary(pil_image, vertices, caption):
     xys = [(vertex.x * pil_image.size[0], vertex.y * pil_image.size[1]) for vertex in vertices]
     xys.append(xys[0])
     draw.line(xys, fill=(255, 255, 0), width=10)
-    draw.text((xys[0][0], xys[0][1]-int(pil_image.size[0]/10)*1.4), caption, (0,0,0), font=font)
+    draw.text((xys[0][0], xys[0][1]), caption, (0,0,0), font=font)
 
 def get_nutrition_facts_from_multiple_foods():
     takePhoto()
@@ -51,8 +53,5 @@ def get_nutrition_facts_from_multiple_foods():
     features = [vision.Feature.Type.OBJECT_LOCALIZATION]
 
     response = analyze_image(prepare_image_local(image_path), features)
-    foods = get_foods(response)
-    # print(foods)
-
-    nutrition_facts = get_nutrition_from_food(foods)
+    nutrition_facts = get_foods(response)
     return nutrition_facts
