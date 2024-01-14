@@ -29,6 +29,7 @@
 		AB12661B2B539D2900EA335C /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661A2B539D2900EA335C /* PictureView.swift */; };
 		AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661E2B539D4C00EA335C /* NutritionView.swift */; };
 		AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1266202B539D5B00EA335C /* WarningsView.swift */; };
+		AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
 		AB88FD992B53B85B004D3EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				AB12661A2B539D2900EA335C /* PictureView.swift */,
+				AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */,
 				AB12661E2B539D4C00EA335C /* NutritionView.swift */,
 				AB1266202B539D5B00EA335C /* WarningsView.swift */,
 			);
@@ -407,6 +410,7 @@
 				59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */,
 				59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */,
 				59348D802B538BFC00C3E69E /* User.swift in Sources */,
+				AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */,
 				59348D752B53856E00C3E69E /* MenuView.swift in Sources */,
 				59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */,
 				59348D732B53840100C3E69E /* HomeView.swift in Sources */,

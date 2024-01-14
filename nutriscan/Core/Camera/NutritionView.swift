@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 struct NutritionView: View {
-    let image: UIImage?
-
     var body: some View {
-        // Your NutritionView UI and logic here
-        Text("Nutrition View")
+        ZStack {
+            Text("Hello World")
+                .font(.system(size: 50))
+        }
     }
 }
 
-//#Preview {
-//    NutritionView(UIImage)
-//}
+#Preview {
+    NutritionView()
+}

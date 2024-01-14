@@ -13,14 +13,14 @@ import PhotosUI
 struct PictureView: View {
     @State private var showCamera = false
     @State private var selectedImage: UIImage?
-    @State private var navigateToNutritionView = false
+    @State private var navigateToEditView = false
 
     var body: some View {
         NavigationView {
             VStack {
                 NavigationLink(
-                    destination: NutritionView(image: selectedImage),
-                    isActive: $navigateToNutritionView
+                    destination: EditView(image: selectedImage),
+                    isActive: $navigateToEditView
                 ) {
                     EmptyView()
                 }
@@ -29,7 +29,7 @@ struct PictureView: View {
                     self.showCamera.toggle()
                 }
                 .fullScreenCover(isPresented: self.$showCamera) {
-                    accessCameraView(selectedImage: self.$selectedImage, navigateToNutritionView: self.$navigateToNutritionView)
+                    accessCameraView(selectedImage: self.$selectedImage, navigateToEditView: self.$navigateToEditView)
                 }
             }
             .navigationBarTitle("Main View")
@@ -40,7 +40,7 @@ struct PictureView: View {
 
 struct accessCameraView: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage?
-    @Binding var navigateToNutritionView: Bool
+    @Binding var navigateToEditView: Bool
     @Environment(\.presentationMode) var isPresented
 
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -71,7 +71,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerContro
             return
         }
         self.picker.selectedImage = selectedImage
-        self.picker.navigateToNutritionView = true
+        self.picker.navigateToEditView = true
         self.picker.isPresented.wrappedValue.dismiss()
     }
 }
