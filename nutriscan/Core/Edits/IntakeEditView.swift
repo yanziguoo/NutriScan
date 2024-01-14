@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  IntakeEditView.swift
 //  nutriscan
 //
 //  Created by Yanzi Guo on 2024-01-13.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct IntakeView: View {
+struct IntakeEditView: View {
     var body: some View {
         NavigationStack{
             VStack {
                 List {
                     Section {
                         VStack {
-                            Text("Your Daily Intake Limits:")
+                            Text("Feature Coming Soon")
                                 .font(.title)
-                                .fontWeight(.semibold)
-                                .foregroundStyle(Color(.black))
+                                .fontWeight(.bold)
+                                .foregroundStyle(Color(.red))
 
                         }
                     }
@@ -25,14 +25,12 @@ struct IntakeView: View {
                     NutrientsData(a: "", b: "", c: "", d: "", e: "", f: "", g: "", h: "", i: "", j: "", isIntake: true)
                     
                     Section {
-                        NavigationLink (destination: IntakeEditView()) {
-                            Text("Edit")
-                                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
-                                .background(Color("navy"))
+                            Text("Save")
+                                .frame(width: UIScreen.main.bounds.width - 50, height: 48)
+                                .background(Color(.gray))
                                 .fontWeight(.semibold)
                                 .foregroundStyle(Color(.white))
                                 .cornerRadius(10)
-                        }
                     }
                 }
             }
@@ -56,5 +54,5 @@ struct IntakeView: View {
 }
 
 #Preview {
-    IntakeView()
+    IntakeEditView()
 }
