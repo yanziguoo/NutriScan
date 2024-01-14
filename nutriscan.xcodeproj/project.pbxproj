@@ -75,6 +75,7 @@
 		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
 		AB1266222B539F1000EA335C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB88FD992B53B85B004D3EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		59348D282B533A3E00C3E69E /* nutriscan */ = {
 			isa = PBXGroup;
 			children = (
+				AB88FD992B53B85B004D3EB8 /* Info.plist */,
 				59348D5E2B53485800C3E69E /* App */,
 				59348D5D2B53485600C3E69E /* Components */,
 				59348D5C2B53485500C3E69E /* Core */,
@@ -581,6 +583,8 @@
 				DEVELOPMENT_TEAM = 99J64R556P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nutriscan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "used for nutritional calculations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -611,6 +615,8 @@
 				DEVELOPMENT_TEAM = 99J64R556P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nutriscan/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "used for nutritional calculations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
