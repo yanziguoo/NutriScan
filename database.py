@@ -9,15 +9,31 @@ from dotenv import load_dotenv
 import urllib.request
 
 def writeFoodtoDB(db, data):
+    collection_ref = db.collection("nutrition_facts")
+    docs = collection_ref.stream()
+
+    for doc in docs:
+        doc.reference.delete()
+
     for li in data:
         data_list = json.loads(li)
         data_dict = data_list[0]
 
-        db.collection("nutrition_facts").document("0vKBjNWrrBitRDv0d3pM").set(data_dict)
+        db.collection("nutrition_facts").document().create(data_dict)
+
+def test(db):
+    nutrition_ref = db.collection("nutrition_facts")
+    nutrition_docs = nutrition_ref.stream()
+
+    for doc in nutrition_docs:
+        data_dict = doc.to_dict()
+        del data_dict["name"]
+        db.collection("users").document("ApQhowngBK0mGVw5Ld3h").set(data_dict)
+        break
+
 
 def writeTotaltoDB(db):
     users_ref = db.collection("users")
-    users_docs = users_ref.stream()
 
     nutrition_ref = db.collection("nutrition_facts")
     nutrition_docs = nutrition_ref.stream()
@@ -26,17 +42,19 @@ def writeTotaltoDB(db):
         data_dict = doc.to_dict()
         del data_dict["name"]
 
-        summed_dict = {}
-        for total in users_docs:
-            doc_dict = total.to_dict()
+        # print("food", data_dict)
 
-            print(data_dict)
-            print(doc_dict)
+        users_docs = users_ref.stream()
+        for user in users_docs:
+            doc_dict = user.to_dict()
+            # print("user", doc_dict)
+
             summed_dict = {key: doc_dict[key] + data_dict[key] for key in doc_dict.keys()}
+            # print("sum", summed_dict)
 
             db.collection("users").document("ApQhowngBK0mGVw5Ld3h").set(summed_dict)
 
-def readfromDB():
+def readfromDB(img_name):
     env = os.path.join("./deltahacks24/firebase.json")
     cred = credentials.Certificate(env)
     app = firebase_admin.initialize_app(cred, {
@@ -44,7 +62,7 @@ def readfromDB():
     }, name='storage')
 
     bucket = storage.bucket(app=app)
-    blob = bucket.blob("pizza.jpg")
+    blob = bucket.blob(img_name)
 
     url = blob.generate_signed_url(expiration=datetime.timedelta(seconds=300))
 
