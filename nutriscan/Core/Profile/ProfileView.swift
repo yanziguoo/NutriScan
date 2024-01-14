@@ -36,7 +36,7 @@ struct ProfileView: View {
                     }
                     
                     Section("Stats") {
-                        NavigationLink (destination: LoginView()) {
+                        NavigationLink (destination: MonthStatsView()) {
                             Text("Your Stats for This Month")
                         }
                     }
@@ -54,7 +54,7 @@ struct ProfileView: View {
                 NavigationLink(destination: HomeView()) {
                     Image("home")
                 }
-                NavigationLink(destination: LoginView()) {
+                NavigationLink(destination: PictureView()) {
                     Image("camera")
                         .padding(.horizontal, 60)
                 }
