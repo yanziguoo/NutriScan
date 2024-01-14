@@ -17,14 +17,17 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     return true
   }
 }
+
 @main
 struct nutriscanApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    @StateObject var viewModel = AuthViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .environmentObject(viewModel)
         }
     }
 }
