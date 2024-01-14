@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nutriscan-database",
+  "private_key_id": "c6e3e2a7aa3d13c994a073ab230c6cce91bfdb19",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDZK6fPUaCui8L\nSiRYdkKS3MFsMsnMoRbiM6qY8Ynv0S3KzhNsB6D2dQqb/ADo1wAGZJHstIPzyADz\n6yGGiLWvwadpF4KL357vst2FOXHjZ2ay0AXPNcK1iLblAqo1c8tTD5u9s+I0gJcW\n/W0b7Ges9P4gAQIIuW8rkhDxfW91q9MiIgFYgiAYVPsQeUALeFNJn9lCEqAb0TgX\nL0u8E7zEy+eyPLzUntHe2oySI6JnNbCl+NrxD9LG6fJunmWLIrpaLaDPiDPYxUfH\nmUU+KqrJJH5K2GxZPc5iSQ50PcOAq6x4r6xH4rEEyBSWs6P5fNJGtJH1abs9M2Gx\niitx2/t9AgMBAAECggEAK0pLRgyVarFFawLqOo85AMDYOdimzSeDompACdK59OAr\nfRtbQjwOdYxI5XZX3T6FSuVNT1xPP9u4GlKmAuCXIHGPXcFPsx3AYOsIGVQ432Ex\nZ7yfDOGkWgQIQYTtoRoemjCDGOyZ2XgEAZv0aJNgBPnis8SFZtluwACEsHxSDYe4\no+aoChWIXfWxKI80q/Suaq1Tz4tN+7CQdNcUY/RH43LctLEOPUHjDaA9VzPG/NZS\nls5KtUTFKVjElcj9HGlisq82FHRduyyS351+6T0JrJ/R6Mnxo/Ok65rNrHwphJx/\n/SGSiPtc/3kn/XKt7hDjyPrFuakfNkIn0fV8KYEWAQKBgQD08VipeilR6jT+ADTf\nTNZnguYngcme7L7nMnLEAGDBN51L8TtoaejePHQAkt6okIvWIWlDJU37szJ3h7At\nfXNh5odkh3dUqJc+sAPnnTHNiwKJKMY49+ZV1fi03XKbWo7M0OQlEglqM4dunXro\nDuPt1x+JFKcXFAzzKs33pXT78QKBgQDMNrkNqjPO0ubhTuKuZ91mo64DnQoAEr8q\nkxQZPXNNgSUDtptxOFrUeLvT8NzqUALdP5LPcle65p5E6BoIkQarUMbx4pwwBCHw\nnf6c1xCCPPpZaBp6yXtsJjNprlDniSmguEUdzab1YiPiXb2ugPlV8hNve14zVY5G\nrbYrorN0TQKBgFJ+VhX+BpyH/IDvIN9zyWHjPBBiLb1Qjpre6rgISI3KZTeGbzOj\nN8JhKdBnpoWu6OmdJw5uKe1zVLPdBwDLF2kJct/wn8frX8TFEwuWbYeEIb5/9QKK\nuxB9l92SF18rCJ0CXVP+1xzlbd9bOmGdYjZgFUbdpcioABSFfgjBuLyBAoGAET51\ntd+vbEGG2XOt1IhUu7wKj6eNFqB+n/u3cMItoFfNZljfG1pk4Rgo1Ca8oNSMyV36\n6aWAHvomVy86M4r7gy/Y/Mfj5HIU45qTy26lqDm58h7GTaQB1goLwVrE3ihI6Zdl\nzrR06reUzCKaR8gARe+hEILcW31X/EPi5CBjAukCgYBXknM/zjdw+ovNbPp6LUWN\n/g1RNP3nz5cxhUSXNcWYXWohl5t1yG/bYAwL9eGgZcCthRVLIn9VmdQ+FT5kevul\nBeLEW5QPbjkAANMEmUk8Y2NxW1YHVDMoURfy9mO/SiVHxFGKeziVMsrsHUyYpJON\nj4TRI1/P8i6mTRea2leG/Q==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-h807g@nutriscan-database.iam.gserviceaccount.com",
+  "client_id": "106940533405977586944",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-h807g%40nutriscan-database.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
