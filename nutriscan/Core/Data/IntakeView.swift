@@ -40,7 +40,7 @@ struct IntakeView: View {
                         .padding(.horizontal, 60)
                 }
                 NavigationLink(destination: ProfileView()) {
-                    Image("pink-prof")
+                    Image("profile")
                 }
             }
         }

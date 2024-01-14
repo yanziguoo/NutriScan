@@ -49,19 +49,15 @@ struct RegistrationView: View {
             .padding(.horizontal)
             .padding(.top, 12)
             
-            Button {
-                print("Sign user up...")
-            } label: {
-                HStack {
-                    Text("SIGN UP")
-                        .fontWeight(.semibold)
-                }
-                .foregroundColor(.white)
-                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+            NavigationLink (destination: HomeView()) {
+                Text("SIGN UP")
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                    .background(Color("navy"))
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color(.white))
+                    .cornerRadius(10)
+                    .padding(.top, 24)
             }
-            .background(Color(.systemBlue))
-            .cornerRadius(10)
-            .padding(.top, 24)
             
             Spacer()
             

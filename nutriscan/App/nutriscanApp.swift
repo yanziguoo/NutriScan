@@ -26,7 +26,7 @@ struct nutriscanApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
 //                .environmentObject(viewModel)
         }
     }

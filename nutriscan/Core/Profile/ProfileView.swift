@@ -58,9 +58,7 @@ struct ProfileView: View {
                     Image("camera")
                         .padding(.horizontal, 60)
                 }
-                NavigationLink(destination: ProfileView()) {
-                    Image("pink-prof")
-                }
+                Image("pink-prof")
             }
         }
     }
