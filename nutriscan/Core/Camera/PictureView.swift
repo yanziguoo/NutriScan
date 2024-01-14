@@ -27,6 +27,7 @@ struct PictureView: View {
                 
                 Button("Open camera") {
                     self.showCamera.toggle()
+                    
                 }
                 .fullScreenCover(isPresented: self.$showCamera) {
                     accessCameraView(selectedImage: self.$selectedImage, navigateToEditView: self.$navigateToEditView)
