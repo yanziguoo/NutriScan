@@ -22,7 +22,7 @@ struct NutritionView: View {
                         }
                     }
                     
-                    NutrientsData(a: "324 kcal", b: " 5 g", c: "0.3 g", d: "100 g", e: "5 mg", f: "20 mg", g: "5 mg", h: "15 g", i: "2 g", j: "10 g")
+                    NutrientsData(a: "395", b: "21.1 g", c: "11.7 g", d: "8.2 g", e: "436 mg", f: "105 mg", g: "66 mg", h: "45 g", i: "2.6 g", j: "11.2 g")
                 }
                 
                 NavigationLink (destination: WarningsView()) {

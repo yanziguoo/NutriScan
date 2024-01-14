@@ -22,7 +22,7 @@ struct IntakeEditView: View {
                         }
                     }
                     
-                    NutrientsData(a: "", b: "", c: "", d: "", e: "", f: "", g: "", h: "", i: "", j: "", isIntake: true)
+                    NutrientsData(a: "1800-2400", b: "40-80 g", c: "0-20 g", d: "45-90 g", e: "1800-2300 mg", f: "2500-3400 mg", g: "0-200 mg", h: "225-325 g", i: "15-30 g", j: "0-24 g")
                     
                     Section {
                             Text("Save")

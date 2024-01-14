@@ -23,13 +23,15 @@
 		59348D7E2B5389E300C3E69E /* NutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7D2B5389E300C3E69E /* NutrientView.swift */; };
 		59348D802B538BFC00C3E69E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7F2B538BFC00C3E69E /* User.swift */; };
 		59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D852B53948D00C3E69E /* AuthViewModel.swift */; };
-		59348D912B53C84700C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D902B53C84700C3E69E /* GoogleService-Info.plist */; };
 		59348D952B53D57E00C3E69E /* IntakeEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D942B53D57E00C3E69E /* IntakeEditView.swift */; };
 		59348D972B53D96600C3E69E /* NutrientsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D962B53D96600C3E69E /* NutrientsData.swift */; };
+		59348D992B53F1C100C3E69E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D982B53F1C100C3E69E /* EditView.swift */; };
+		59348D9C2B53F23000C3E69E /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 59348D9B2B53F23000C3E69E /* PythonKit */; };
+		59348D9E2B53FDF300C3E69E /* RunPythonScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D9D2B53FDF300C3E69E /* RunPythonScript.swift */; };
+		59348DA42B540B4C00C3E69E /* DayStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348DA32B540B4C00C3E69E /* DayStatsView.swift */; };
 		AB12661B2B539D2900EA335C /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661A2B539D2900EA335C /* PictureView.swift */; };
 		AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661E2B539D4C00EA335C /* NutritionView.swift */; };
 		AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1266202B539D5B00EA335C /* WarningsView.swift */; };
-		AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */; };
 		ABC608402B53D975000F27AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -69,14 +71,16 @@
 		59348D7D2B5389E300C3E69E /* NutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientView.swift; sourceTree = "<group>"; };
 		59348D7F2B538BFC00C3E69E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59348D852B53948D00C3E69E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		59348D902B53C84700C3E69E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59348D942B53D57E00C3E69E /* IntakeEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeEditView.swift; sourceTree = "<group>"; };
 		59348D962B53D96600C3E69E /* NutrientsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsData.swift; sourceTree = "<group>"; };
+		59348D982B53F1C100C3E69E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		59348D9D2B53FDF300C3E69E /* RunPythonScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunPythonScript.swift; sourceTree = "<group>"; };
+		59348DA22B5408A500C3E69E /* nutriscan.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = nutriscan.entitlements; sourceTree = "<group>"; };
+		59348DA32B540B4C00C3E69E /* DayStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStatsView.swift; sourceTree = "<group>"; };
 		AB12661A2B539D2900EA335C /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
 		AB88FD992B53B85B004D3EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59348D592B533CFE00C3E69E /* FirebaseAnalytics in Frameworks */,
+				59348D9C2B53F23000C3E69E /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,7 @@
 		59348D282B533A3E00C3E69E /* nutriscan */ = {
 			isa = PBXGroup;
 			children = (
+				59348DA22B5408A500C3E69E /* nutriscan.entitlements */,
 				ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */,
 				AB88FD992B53B85B004D3EB8 /* Info.plist */,
 				59348D5E2B53485800C3E69E /* App */,
@@ -226,6 +232,7 @@
 			children = (
 				59348D772B5387C300C3E69E /* IntakeView.swift */,
 				59348D792B5387E200C3E69E /* MonthStatsView.swift */,
+				59348DA32B540B4C00C3E69E /* DayStatsView.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -259,9 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				AB12661A2B539D2900EA335C /* PictureView.swift */,
-				AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */,
 				AB12661E2B539D4C00EA335C /* NutritionView.swift */,
 				AB1266202B539D5B00EA335C /* WarningsView.swift */,
+				59348D982B53F1C100C3E69E /* EditView.swift */,
+				59348D9D2B53FDF300C3E69E /* RunPythonScript.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 			name = nutriscan;
 			packageProductDependencies = (
 				59348D582B533CFE00C3E69E /* FirebaseAnalytics */,
+				59348D9B2B53F23000C3E69E /* PythonKit */,
 			);
 			productName = nutriscan;
 			productReference = 59348D262B533A3E00C3E69E /* nutriscan.app */;
@@ -359,6 +368,7 @@
 			mainGroup = 59348D1D2B533A3E00C3E69E;
 			packageReferences = (
 				59348D572B533CFE00C3E69E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				59348D9A2B53F23000C3E69E /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			productRefGroup = 59348D272B533A3E00C3E69E /* Products */;
 			projectDirPath = "";
@@ -411,8 +421,9 @@
 				59348D7A2B5387E200C3E69E /* MonthStatsView.swift in Sources */,
 				59348D682B534C8B00C3E69E /* InputView.swift in Sources */,
 				59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */,
+				59348D9E2B53FDF300C3E69E /* RunPythonScript.swift in Sources */,
 				59348D802B538BFC00C3E69E /* User.swift in Sources */,
-				AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */,
+				59348D992B53F1C100C3E69E /* EditView.swift in Sources */,
 				59348D752B53856E00C3E69E /* MenuView.swift in Sources */,
 				59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */,
 				59348D732B53840100C3E69E /* HomeView.swift in Sources */,
@@ -420,6 +431,7 @@
 				AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */,
 				59348D7E2B5389E300C3E69E /* NutrientView.swift in Sources */,
 				AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */,
+				59348DA42B540B4C00C3E69E /* DayStatsView.swift in Sources */,
 				59348D6E2B53705700C3E69E /* ProfileView.swift in Sources */,
 				59348D6A2B535D6E00C3E69E /* RegistrationView.swift in Sources */,
 			);
@@ -570,7 +582,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -579,10 +591,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nutriscan/nutriscan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nutriscan/Preview Content\"";
-				DEVELOPMENT_TEAM = 99J64R556P;
+				DEVELOPMENT_TEAM = R7PB67CQMM;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nutriscan/Info.plist;
@@ -598,7 +613,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutrican;
+				PRODUCT_BUNDLE_IDENTIFIER = io.deltahacks.nutriscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -611,10 +626,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nutriscan/nutriscan.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nutriscan/Preview Content\"";
-				DEVELOPMENT_TEAM = 99J64R556P;
+				DEVELOPMENT_TEAM = R7PB67CQMM;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = nutriscan/Info.plist;
@@ -630,7 +648,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutrican;
+				PRODUCT_BUNDLE_IDENTIFIER = io.deltahacks.nutriscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -764,6 +782,14 @@
 				minimumVersion = 10.19.1;
 			};
 		};
+		59348D9A2B53F23000C3E69E /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -771,6 +797,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 59348D572B533CFE00C3E69E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		59348D9B2B53F23000C3E69E /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59348D9A2B53F23000C3E69E /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
