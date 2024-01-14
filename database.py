@@ -8,12 +8,33 @@ import datetime
 from dotenv import load_dotenv
 import urllib.request
 
-def writetoDB(data):
-    db = initiateDB()
-
+def writeFoodtoDB(db, data):
     for li in data:
         data_list = json.loads(li)
-        db.collection("users").document("ApQhowngBK0mGVw5Ld3h").set(data_list[0])
+        data_dict = data_list[0]
+
+        db.collection("nutrition_facts").document("0vKBjNWrrBitRDv0d3pM").set(data_dict)
+
+def writeTotaltoDB(db):
+    users_ref = db.collection("users")
+    users_docs = users_ref.stream()
+
+    nutrition_ref = db.collection("nutrition_facts")
+    nutrition_docs = nutrition_ref.stream()
+
+    for doc in nutrition_docs:
+        data_dict = doc.to_dict()
+        del data_dict["name"]
+
+        summed_dict = {}
+        for total in users_docs:
+            doc_dict = total.to_dict()
+
+            print(data_dict)
+            print(doc_dict)
+            summed_dict = {key: doc_dict[key] + data_dict[key] for key in doc_dict.keys()}
+
+            db.collection("users").document("ApQhowngBK0mGVw5Ld3h").set(summed_dict)
 
 def readfromDB():
     env = os.path.join("./deltahacks24/firebase.json")
