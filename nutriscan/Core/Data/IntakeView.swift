@@ -43,7 +43,7 @@ struct IntakeView: View {
                 NavigationLink(destination: HomeView()) {
                     Image("home")
                 }
-                NavigationLink(destination: LoginView()) {
+                NavigationLink(destination: PictureView()) {
                     Image("camera")
                         .padding(.horizontal, 60)
                 }

@@ -9,7 +9,54 @@ import SwiftUI
 
 struct MonthStatsView: View {
     var body: some View {
-        Text("Month Stats")
+        NavigationStack{
+            VStack {
+                List {
+                    Section {
+                        HStack {
+                            Text("Hey,")
+                                .font(.title)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color(.black))
+                            Text("Yanzi!")
+                                .font(.title)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color(.systemBlue))
+                        }
+                    }
+                    
+                    Section {
+                        Text("Here's how well you abided by your daily intake levels this month!")
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(Color(.black))
+                    }
+                }
+                Text("50%")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color(.white))
+                    .frame(width: 200, height: 200)
+                    .background(Color(.systemBlue))
+                    .clipShape(Circle())
+                    .padding(.bottom, 150)
+            }
+            Spacer()
+            Spacer()
+            
+            HStack {
+                NavigationLink(destination: HomeView()) {
+                    Image("home")
+                }
+                NavigationLink(destination: PictureView()) {
+                    Image("camera")
+                        .padding(.horizontal, 60)
+                }
+                NavigationLink(destination: ProfileView()) {
+                    Image("profile")
+                }
+            }
+        }
     }
 }
 

@@ -41,7 +41,7 @@ struct HomeView: View {
             
             HStack {
                 Image("pink-house")
-                NavigationLink(destination: LoginView()) {
+                NavigationLink(destination: PictureView()) {
                     Image("camera")
                         .padding(.horizontal, 60)
                 }
