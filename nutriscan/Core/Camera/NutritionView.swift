@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct NutritionView: View {
+struct NutritionView: View {    
     var body: some View {
         ZStack {
-            Text("Hello World")
+            Text("Nutrient View")
                 .font(.system(size: 50))
         }
     }
