@@ -6,3 +6,34 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct WarningsView: View {
+    var body: some View {
+        NavigationStack{
+            VStack {
+                List {
+                    Section {
+                        VStack {
+                                Text("Be Careful!")
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(Color(.black))
+                                Text("You're Nearing your Daily Intake for some Nutrients")
+                                .font(.title)
+                                .fontWeight(.semibold)
+                                .foregroundStyle(Color(.black))
+                        }
+                    }
+                    
+                    NutrientsData(a: "324 kcal", b: " 5 g", c: "0.3 g", d: "100 g", e: "5 mg", f: "20 mg", g: "5 mg", h: "15 g", i: "2 g", j: "10 g")
+                }
+            }
+            Spacer()
+        }
+    }
+}
+
+#Preview {
+    WarningsView()
+}
