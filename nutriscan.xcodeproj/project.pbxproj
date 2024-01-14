@@ -28,6 +28,10 @@
 		59348D7E2B5389E300C3E69E /* NutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7D2B5389E300C3E69E /* NutrientView.swift */; };
 		59348D802B538BFC00C3E69E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7F2B538BFC00C3E69E /* User.swift */; };
 		59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D852B53948D00C3E69E /* AuthViewModel.swift */; };
+		AB12661B2B539D2900EA335C /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661A2B539D2900EA335C /* PictureView.swift */; };
+		AB12661D2B539D3300EA335C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661C2B539D3300EA335C /* EditView.swift */; };
+		AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661E2B539D4C00EA335C /* NutritionView.swift */; };
+		AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1266202B539D5B00EA335C /* WarningsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		59348D7D2B5389E300C3E69E /* NutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientView.swift; sourceTree = "<group>"; };
 		59348D7F2B538BFC00C3E69E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59348D852B53948D00C3E69E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		AB12661A2B539D2900EA335C /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
+		AB12661C2B539D3300EA335C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
+		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 		59348D5C2B53485500C3E69E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AB1266192B539CCC00EA335C /* Camera */,
 				59348D762B5387AE00C3E69E /* Data */,
 				59348D712B5383C000C3E69E /* Home */,
 				59348D622B53491E00C3E69E /* Authentication */,
@@ -242,6 +251,17 @@
 				59348D852B53948D00C3E69E /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AB1266192B539CCC00EA335C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AB12661A2B539D2900EA335C /* PictureView.swift */,
+				AB12661C2B539D3300EA335C /* EditView.swift */,
+				AB12661E2B539D4C00EA335C /* NutritionView.swift */,
+				AB1266202B539D5B00EA335C /* WarningsView.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,8 +404,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				59348D782B5387C300C3E69E /* IntakeView.swift in Sources */,
+				AB12661D2B539D3300EA335C /* EditView.swift in Sources */,
 				59348D662B534ABB00C3E69E /* LoginView.swift in Sources */,
 				59348D6C2B53676100C3E69E /* WelcomeView.swift in Sources */,
+				AB12661B2B539D2900EA335C /* PictureView.swift in Sources */,
 				59348D7A2B5387E200C3E69E /* MonthStatsView.swift in Sources */,
 				59348D682B534C8B00C3E69E /* InputView.swift in Sources */,
 				59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */,
@@ -395,7 +417,9 @@
 				59348D2A2B533A3E00C3E69E /* nutriscanApp.swift in Sources */,
 				59348D732B53840100C3E69E /* HomeView.swift in Sources */,
 				59348D7C2B53882500C3E69E /* DayStatsView.swift in Sources */,
+				AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */,
 				59348D7E2B5389E300C3E69E /* NutrientView.swift in Sources */,
+				AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */,
 				59348D6E2B53705700C3E69E /* ProfileView.swift in Sources */,
 				59348D6A2B535D6E00C3E69E /* RegistrationView.swift in Sources */,
 			);
