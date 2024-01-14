@@ -24,11 +24,11 @@
 		59348D7E2B5389E300C3E69E /* NutrientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7D2B5389E300C3E69E /* NutrientView.swift */; };
 		59348D802B538BFC00C3E69E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D7F2B538BFC00C3E69E /* User.swift */; };
 		59348D862B53948D00C3E69E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D852B53948D00C3E69E /* AuthViewModel.swift */; };
-		59348D912B53C84700C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D902B53C84700C3E69E /* GoogleService-Info.plist */; };
 		AB12661B2B539D2900EA335C /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661A2B539D2900EA335C /* PictureView.swift */; };
 		AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661E2B539D4C00EA335C /* NutritionView.swift */; };
 		AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1266202B539D5B00EA335C /* WarningsView.swift */; };
 		AB88FD9B2B53CEFA004D3EB8 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */; };
+		ABC608402B53D975000F27AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +68,12 @@
 		59348D7D2B5389E300C3E69E /* NutrientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientView.swift; sourceTree = "<group>"; };
 		59348D7F2B538BFC00C3E69E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		59348D852B53948D00C3E69E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		59348D902B53C84700C3E69E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB12661A2B539D2900EA335C /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
 		AB88FD992B53B85B004D3EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AB88FD9A2B53CEFA004D3EB8 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +123,13 @@
 		59348D282B533A3E00C3E69E /* nutriscan */ = {
 			isa = PBXGroup;
 			children = (
+				ABC6083F2B53D975000F27AA /* GoogleService-Info.plist */,
 				AB88FD992B53B85B004D3EB8 /* Info.plist */,
 				59348D5E2B53485800C3E69E /* App */,
 				59348D5D2B53485600C3E69E /* Components */,
 				59348D5C2B53485500C3E69E /* Core */,
 				59348D5F2B5348C200C3E69E /* Model */,
 				59348D2D2B533A4200C3E69E /* Assets.xcassets */,
-				59348D902B53C84700C3E69E /* GoogleService-Info.plist */,
 				59348D2F2B533A4200C3E69E /* Preview Content */,
 			);
 			path = nutriscan;
@@ -365,7 +365,7 @@
 			files = (
 				59348D312B533A4200C3E69E /* Preview Assets.xcassets in Resources */,
 				59348D2E2B533A4200C3E69E /* Assets.xcassets in Resources */,
-				59348D912B53C84700C3E69E /* GoogleService-Info.plist in Resources */,
+				ABC608402B53D975000F27AA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +584,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutriscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutrican;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -616,7 +616,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutriscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutrican;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
