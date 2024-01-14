@@ -11,9 +11,6 @@
 		59348D2C2B533A3F00C3E69E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D2B2B533A3F00C3E69E /* ContentView.swift */; };
 		59348D2E2B533A4200C3E69E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D2D2B533A4200C3E69E /* Assets.xcassets */; };
 		59348D312B533A4200C3E69E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59348D302B533A4200C3E69E /* Preview Assets.xcassets */; };
-		59348D542B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
-		59348D552B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
-		59348D562B533BCF00C3E69E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59348D532B533BCE00C3E69E /* GoogleService-Info.plist */; };
 		59348D592B533CFE00C3E69E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 59348D582B533CFE00C3E69E /* FirebaseAnalytics */; };
 		59348D662B534ABB00C3E69E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D652B534ABB00C3E69E /* LoginView.swift */; };
 		59348D682B534C8B00C3E69E /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59348D672B534C8B00C3E69E /* InputView.swift */; };
@@ -32,6 +29,7 @@
 		AB12661D2B539D3300EA335C /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661C2B539D3300EA335C /* EditView.swift */; };
 		AB12661F2B539D4C00EA335C /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12661E2B539D4C00EA335C /* NutritionView.swift */; };
 		AB1266212B539D5B00EA335C /* WarningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1266202B539D5B00EA335C /* WarningsView.swift */; };
+		AB1266232B539F1000EA335C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB1266222B539F1000EA335C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +57,6 @@
 		59348D302B533A4200C3E69E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59348D362B533A4200C3E69E /* nutriscanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriscanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59348D402B533A4200C3E69E /* nutriscanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriscanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		59348D532B533BCE00C3E69E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59348D652B534ABB00C3E69E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		59348D672B534C8B00C3E69E /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		59348D692B535D6E00C3E69E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		AB12661C2B539D3300EA335C /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		AB12661E2B539D4C00EA335C /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		AB1266202B539D5B00EA335C /* WarningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningsView.swift; sourceTree = "<group>"; };
+		AB1266222B539F1000EA335C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +128,7 @@
 				59348D5D2B53485600C3E69E /* Components */,
 				59348D5C2B53485500C3E69E /* Core */,
 				59348D5F2B5348C200C3E69E /* Model */,
-				59348D532B533BCE00C3E69E /* GoogleService-Info.plist */,
+				AB1266222B539F1000EA335C /* GoogleService-Info.plist */,
 				59348D2D2B533A4200C3E69E /* Assets.xcassets */,
 				59348D2F2B533A4200C3E69E /* Preview Content */,
 			);
@@ -375,8 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59348D312B533A4200C3E69E /* Preview Assets.xcassets in Resources */,
+				AB1266232B539F1000EA335C /* GoogleService-Info.plist in Resources */,
 				59348D2E2B533A4200C3E69E /* Assets.xcassets in Resources */,
-				59348D542B533BCF00C3E69E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +382,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59348D552B533BCF00C3E69E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +389,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59348D562B533BCF00C3E69E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +578,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nutriscan/Preview Content\"";
-				DEVELOPMENT_TEAM = R7PB67CQMM;
+				DEVELOPMENT_TEAM = 99J64R556P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -590,12 +586,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.deltahacks.nutriscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutriscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -611,7 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"nutriscan/Preview Content\"";
-				DEVELOPMENT_TEAM = R7PB67CQMM;
+				DEVELOPMENT_TEAM = 99J64R556P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -619,12 +616,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.deltahacks.nutriscan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.simra.nutriscan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
